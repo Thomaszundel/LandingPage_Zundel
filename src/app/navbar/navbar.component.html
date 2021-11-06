@@ -1,0 +1,9 @@
+<div class="navbar">
+  <div class="brand">GAMES</div>
+  <ul>
+    <li *ngFor="let item of urls">
+      <!-- <a [href]="item">{{item}}</a> -->
+      <a [routerLink]="item.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</a>
+    </li>
+  </ul>
+</div>
